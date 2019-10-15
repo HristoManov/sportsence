@@ -1,0 +1,63 @@
+// News Sections:
+.mainPageBody .leadingSection .newsContainer{
+  box-sizing: border-box;
+  background: #e5eae6;
+
+  .withReferenceTo{
+    display: none;
+    width: 100%;
+    height: 20px;
+    background: darkgray;
+    text-align: center;
+    .fas{
+      margin-right: 3px;
+    }
+    a{
+      color: black;
+      font-size: 15px;
+    }
+    &:hover{
+      a{
+        color: $primary-color;
+      }
+    }
+  }
+  .articleHolder{
+    .newsImg {
+      background-color: $primary-color;
+      display: block;
+      width: 100%;
+      height: 153px;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      .dateBox{
+        font-size: 0.750em;
+        color: white;
+        position: absolute;
+        bottom: 0;
+      }
+      .dateBox:before{
+        content: '';
+        height: 100%;
+        width: 100%;
+        background: black;
+        opacity: .5;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+    .newsHeader{
+      height: 52px;
+      display: block;
+      text-decoration: none;
+      font-weight: bold;
+      color: #000;
+      font-size: 0.875em;
+      overflow: hidden;
+      padding: 5px 5px 0 5px;
+    }
+  }
+
+}
