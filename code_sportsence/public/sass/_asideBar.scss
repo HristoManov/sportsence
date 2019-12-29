@@ -1,0 +1,92 @@
+// Aside bar:
+.mainAsideBar{
+  display: block;
+  float: left;
+  width: 18.26%;
+  height: 1788px;
+  margin-right: 1.44%;
+
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.938em;
+  }
+  ul:after{
+    content: "";
+    clear: both;
+  }
+  .asideBarTitle{
+    padding: 7px;
+    text-align: center;
+    font-weight: bold;
+    background: lightgreen;
+    color: #5a5655;
+    .fas{
+      color: #e8a439;
+    }
+  }
+  .asideBarList{
+    border-left: 3px solid lightgreen;
+    margin-bottom: 20px;
+  }
+  .asideBarListItem{
+    font-size: 0.933em;
+    padding-left: 1.06%;
+    margin-right: 0;
+    a{
+      display: inline-block;
+      color: #5a5655;
+      padding: 7px 5.34% 7px 1.60%;
+      width: 81.28%;
+    }
+    .fas{
+      font-size: 1.000em;
+      float: right;
+      padding: 12px 0 12px 0;
+      color: $grayText-Color;
+      margin: 0 1.60% 0 0;
+      visibility: hidden;
+      position: relative;
+      &:hover{
+        color: #2b2625;
+        &:after{
+          display: block;
+          font-family: 'Roboto', sans-serif;
+          content: "Remove!";
+          color: white;
+          font-size: 0.867em;
+          position: absolute;
+          right: -72px;
+          padding: 9px;
+          background: #2b2625;
+          z-index: 100;
+        }
+      }
+    }
+    &:hover .fas{
+      visibility: visible;
+    }
+    .flagHolder{
+      display: inline-block;
+      float: left;
+      height: 18px;
+      width: 17.10%;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 2.63%;
+    }
+    .itemName{
+      display: inline-block;
+      margin-top: 3px;
+      max-width: 80.27%;
+      max-height: 18px;
+      overflow: hidden;
+    }
+    &:hover{
+      background: #bfd0c2;
+    }
+  }
+
+}

@@ -1,0 +1,773 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#site {
+  background: white;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/*----------Main Header----------*/
+.mainHeader {
+  box-sizing: border-box;
+}
+
+.mainHeader ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mainHeader a {
+  color: white;
+}
+
+.contentHolder {
+  width: 77.1%;
+  margin: 0 auto;
+}
+
+/*----------Top Main Header----------*/
+.topMainHeader {
+  background: #3e66a5;
+  height: 92px;
+}
+
+.topMainHeader h1 {
+  font-size: 2em;
+  display: block;
+  float: left;
+  margin: 0;
+  line-height: 92px;
+  color: white;
+}
+
+.searchBoxContainer {
+  display: inline-block;
+  height: 34px;
+  width: 300px;
+  background: white;
+  border: 2px solid white;
+  border-radius: 17px;
+  margin-left: 1.95%;
+  margin-top: 2.6%;
+}
+
+.searchBox {
+  line-height: 34px;
+  width: 250px;
+  display: block;
+  float: left;
+  border: 0;
+  background: none;
+  margin-left: 8px;
+}
+
+.searchBoxContainer .fas {
+  display: block;
+  float: right;
+  color: gray;
+  font-size: 1.625em;
+  padding: 4px 8px;
+  background: white;
+  background: none;
+}
+
+.topMainHeader .topMainMenu {
+  padding-top: 33px;
+  float: right;
+}
+
+.topMainHeader .topMainMenu ul:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.topMainHeader .topMainMenu li {
+  float: left;
+  display: block;
+}
+
+.topMainHeader .topMainMenu a {
+  font-size: 1.125em;
+  padding: 10px;
+  margin-left: 9px;
+}
+
+.topMainHeader .topMainMenu li a:hover {
+  background: #0e0046;
+  border-radius: 3px;
+}
+
+.topMainHeader .topMainMenu .smallerSearch {
+  margin-right: 25px;
+  display: none;
+}
+
+/*----------Center Main Header----------*/
+.centerMainHeader {
+  background: #0e0046;
+}
+
+.centerMainHeader .fas {
+  margin-right: 5px;
+}
+
+.centerMainHeader .centerMainMenu {
+  line-height: 39px;
+}
+
+.centerMainHeader .centerMainMenu li {
+  box-sizing: border-box;
+  float: left;
+  font-size: 1em;
+}
+
+.centerMainHeader .centerMainMenu ul:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.centerMainHeader .centerMainMenu .centerMenuItem {
+  padding: 10px 20px;
+}
+
+.centerMainHeader .centerMainMenu .centerMenuItem.store {
+  color: #c3a04c;
+}
+
+.centerMainHeader .centerMainMenu .centerMenuItem:hover {
+  background: #0a022b;
+}
+
+.centerMainHeader .centerMainMenu .centerMenuItem.selected {
+  color: #5a5655;
+  background: #e5eae6;
+}
+
+.burgerMenu {
+  display: none;
+  background: #e5eae6;
+}
+.burgerMenu .burgerIcon {
+  color: white;
+  background: #0e0046;
+  padding: 7px 14px;
+  float: right;
+  border-top: 1px solid white;
+  border-radius: 5px;
+  position: relative;
+}
+.burgerMenu .burgerMenuList {
+  float: right;
+  padding-top: 15px;
+  position: absolute;
+  right: 10px;
+  top: 100px;
+  z-index: 10;
+  visibility: hidden;
+}
+.burgerMenu .burgerMenuList li {
+  display: block;
+  border-bottom: 1px solid white;
+}
+.burgerMenu .burgerMenuList li:last-child {
+  border-bottom: 0;
+}
+.burgerMenu .burgerMenuList li .burgerMenuItem {
+  font-size: 0.825em;
+  display: block;
+  padding: 6px 13px;
+  background: #0e0046;
+  color: white;
+  border-radius: 5px;
+}
+.burgerMenu .burgerMenuList li .burgerMenuItem .fas {
+  margin-right: 3px;
+}
+.burgerMenu .burgerMenuList li .burgerMenuItem.selected {
+  background: #0a022b;
+}
+.burgerMenu:hover .burgerMenuList {
+  visibility: visible;
+}
+
+/*----------Body Container----------*/
+.bodyContainer {
+  background: #e5eae6;
+}
+
+.bodyContainer .bodyTopMarginHolder {
+  width: 100%;
+  height: 10px;
+  background: #e5eae6;
+  margin-bottom: 40px;
+}
+
+/*----------Main Page Body----------*/
+.bodyContainer main {
+  width: 80.29%;
+  display: block;
+  float: left;
+}
+
+.mainPageBody {
+  width: 100%;
+  height: 1840px;
+}
+
+.mainPageBody .leadingSection {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.mainPageBody .leadingSection.news {
+  height: 538px;
+}
+
+.mainPageBody .leadingSection.events {
+  height: 598px;
+}
+
+.mainPageBody .leadingSection.vh {
+  height: 658px;
+}
+
+.mainPageBody .leadingSection h3 {
+  font-size: 1.625em;
+  color: #3e66a5;
+  margin: 0 0 20px 10px;
+  border-left: 3px solid #3e66a5;
+  padding-left: 10px;
+}
+
+.mainPageBody .leadingSection .visitAll {
+  float: right;
+  color: #3e66a5;
+  font-weight: bold;
+  font-size: 1.25em;
+  margin: 6px 25px 0 0;
+}
+
+.mainPageBody .leadingSection .newsContainer,
+.mainPageBody .leadingSection .vhContainer,
+.mainPageBody .leadingSection .eventsContainer {
+  display: block;
+  float: left;
+  background: white;
+}
+
+.mainPageBody .leadingSection .newsContainer {
+  width: 22.15%;
+  height: 210px;
+  margin: 10px 2.99% 20px 0;
+}
+
+.mainPageBody .leadingSection .newsContainer.first {
+  margin-left: 1.19%;
+}
+
+.mainPageBody .leadingSection .eventsContainer {
+  width: 44.91%;
+  height: 105px;
+  margin: 10px 1.79% 20px 1.19%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+
+.mainPageBody .leadingSection .eventsContainer.first {
+  margin-left: 3.59%;
+}
+
+.mainPageBody .leadingSection .vhContainer {
+  width: 46.7%;
+  height: 270px;
+  margin: 10px 0 20px 0;
+}
+
+.mainPageBody .leadingSection .vhContainer.first {
+  margin-left: 1.79%;
+  margin-right: 2.99%;
+}
+
+.mainPageBody .leadingSection .newsContainer.fourth {
+  margin-right: 0;
+}
+
+.mainAsideBar {
+  display: block;
+  float: left;
+  width: 18.26%;
+  height: 1788px;
+  margin-right: 1.44%;
+}
+.mainAsideBar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.938em;
+}
+.mainAsideBar ul:after {
+  content: "";
+  clear: both;
+}
+.mainAsideBar .asideBarTitle {
+  padding: 7px;
+  text-align: center;
+  font-weight: bold;
+  background: lightgreen;
+  color: #5a5655;
+}
+.mainAsideBar .asideBarTitle .fas {
+  color: #e8a439;
+}
+.mainAsideBar .asideBarList {
+  border-left: 3px solid lightgreen;
+  margin-bottom: 20px;
+}
+.mainAsideBar .asideBarListItem {
+  font-size: 0.933em;
+  padding-left: 1.06%;
+  margin-right: 0;
+}
+.mainAsideBar .asideBarListItem a {
+  display: inline-block;
+  color: #5a5655;
+  padding: 7px 5.34% 7px 1.6%;
+  width: 81.28%;
+}
+.mainAsideBar .asideBarListItem .fas {
+  font-size: 1em;
+  float: right;
+  padding: 12px 0 12px 0;
+  color: #5a5655;
+  margin: 0 1.6% 0 0;
+  visibility: hidden;
+  position: relative;
+}
+.mainAsideBar .asideBarListItem .fas:hover {
+  color: #2b2625;
+}
+.mainAsideBar .asideBarListItem .fas:hover:after {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  content: "Remove!";
+  color: white;
+  font-size: 0.867em;
+  position: absolute;
+  right: -72px;
+  padding: 9px;
+  background: #2b2625;
+  z-index: 100;
+}
+.mainAsideBar .asideBarListItem:hover .fas {
+  visibility: visible;
+}
+.mainAsideBar .asideBarListItem .flagHolder {
+  display: inline-block;
+  float: left;
+  height: 18px;
+  width: 17.1%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 2.63%;
+}
+.mainAsideBar .asideBarListItem .itemName {
+  display: inline-block;
+  margin-top: 3px;
+  max-width: 80.27%;
+  max-height: 18px;
+  overflow: hidden;
+}
+.mainAsideBar .asideBarListItem:hover {
+  background: #bfd0c2;
+}
+
+.mainPageBody .leadingSection .newsContainer {
+  box-sizing: border-box;
+  background: #e5eae6;
+}
+.mainPageBody .leadingSection .newsContainer .withReferenceTo {
+  display: none;
+  width: 100%;
+  height: 20px;
+  background: darkgray;
+  text-align: center;
+}
+.mainPageBody .leadingSection .newsContainer .withReferenceTo .fas {
+  margin-right: 3px;
+}
+.mainPageBody .leadingSection .newsContainer .withReferenceTo a {
+  color: black;
+  font-size: 15px;
+}
+.mainPageBody .leadingSection .newsContainer .withReferenceTo:hover a {
+  color: #3e66a5;
+}
+.mainPageBody .leadingSection .newsContainer .articleHolder .newsImg {
+  background-color: #3e66a5;
+  display: block;
+  width: 100%;
+  height: 153px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.mainPageBody .leadingSection .newsContainer .articleHolder .newsImg .dateBox {
+  font-size: 0.75em;
+  color: white;
+  position: absolute;
+  bottom: 0;
+}
+.mainPageBody .leadingSection .newsContainer .articleHolder .newsImg .dateBox:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0;
+}
+.mainPageBody .leadingSection .newsContainer .articleHolder .newsHeader {
+  height: 52px;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  font-size: 0.875em;
+  overflow: hidden;
+  padding: 5px 5px 0 5px;
+}
+
+.mainPageBody .leadingSection .eventsContainer .aboutTheEvent {
+  margin-top: 5px;
+}
+.mainPageBody .leadingSection .eventsContainer .aboutTheEvent .eventReleaseInfo,
+.mainPageBody .leadingSection .eventsContainer .aboutTheEvent .eventRunTimeInfo {
+  color: gray;
+  font-size: 0.938em;
+  margin-bottom: 5px;
+}
+.mainPageBody .leadingSection .eventsContainer .aboutTheEvent .eventReleaseInfo {
+  float: left;
+  margin-left: 5px;
+}
+.mainPageBody .leadingSection .eventsContainer .aboutTheEvent .eventRunTimeInfo {
+  float: right;
+  margin-right: 5px;
+  font-weight: bold;
+}
+.mainPageBody .leadingSection .eventsContainer .aboutTheEvent .eventRunTimeInfo.running {
+  color: green;
+}
+.mainPageBody .leadingSection .eventsContainer .aboutTheEventTeams {
+  text-align: center;
+  height: 82px;
+}
+.mainPageBody .leadingSection .eventsContainer .aboutTheEventTeams .eventDash {
+  font-size: 1.75em;
+}
+.mainPageBody .leadingSection .eventsContainer .aboutTheEventTeams .teamHost {
+  width: 42%;
+  height: 71px;
+  float: left;
+}
+.mainPageBody .leadingSection .eventsContainer .aboutTheEventTeams .teamHost .eventTeams {
+  float: left;
+  width: 75.94%;
+  height: 71px;
+}
+.mainPageBody .leadingSection .eventsContainer .aboutTheEventTeams .teamHost .eventTeams .teamImg {
+  height: 40px;
+  width: 33.33%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.mainPageBody .leadingSection .eventsContainer .aboutTheEventTeams .teamHost .eventTeams .teamName {
+  margin: 0 auto;
+  font-size: 1em;
+}
+.mainPageBody .leadingSection .eventsContainer .aboutTheEventTeams .teamHost .eventsResult {
+  float: right;
+  font-size: 1.75em;
+}
+.mainPageBody .leadingSection .eventsContainer .aboutTheEventTeams .teamGuest {
+  width: 42%;
+  height: 71px;
+  float: right;
+}
+.mainPageBody .leadingSection .eventsContainer .aboutTheEventTeams .teamGuest .eventTeams {
+  float: right;
+  width: 75.94%;
+  height: 71px;
+}
+.mainPageBody .leadingSection .eventsContainer .aboutTheEventTeams .teamGuest .eventTeams .teamImg {
+  height: 40px;
+  width: 33.33%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.mainPageBody .leadingSection .eventsContainer .aboutTheEventTeams .teamGuest .eventTeams .teamName {
+  margin: 0 auto;
+  font-size: 1em;
+}
+.mainPageBody .leadingSection .eventsContainer .aboutTheEventTeams .teamGuest .eventsResult {
+  float: left;
+  font-size: 1.75em;
+}
+.mainPageBody .leadingSection .eventsContainer .aboutTheEventTeams .teamName {
+  font-weight: bold;
+}
+
+.mainPageBody .leadingSection .vhContainer {
+  box-sizing: border-box;
+  background: #e5eae6;
+}
+.mainPageBody .leadingSection .vhContainer .vhVideoContainer {
+  background-color: #3e66a5;
+  width: 100%;
+  height: 230px;
+}
+.mainPageBody .leadingSection .vhContainer .vhDescription {
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  font-size: 1em;
+}
+.mainPageBody .leadingSection .vhContainer .vhDescription .vhTitle {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  font-size: 14px;
+  padding: 5px;
+}
+@media only screen and (max-width: 1300px) {
+  .contentHolder {
+    width: 81.1%;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .contentHolder {
+    width: 85.1%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .contentHolder {
+    width: 89.1%;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .contentHolder {
+    width: 93.1%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .contentHolder {
+    width: 97.1%;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  .contentHolder {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .topMainHeader h1 {
+    font-size: 1.75em;
+    margin-left: 5px;
+  }
+  .topMainHeader .searchBoxContainer {
+    display: none;
+  }
+  .topMainHeader .topMainMenu .smallerSearch {
+    display: block;
+  }
+  .topMainHeader .topMainMenu a {
+    font-size: 1em;
+  }
+
+  .mainAsideBar {
+    display: none;
+  }
+
+  .bodyContainer main {
+    width: 90%;
+    float: none;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .bodyContainer main {
+    width: 100%;
+  }
+
+  .topMainHeader {
+    height: 80px;
+  }
+  .topMainHeader h1 {
+    line-height: 80px;
+  }
+
+  .centerMainHeader .centerMainMenu {
+    line-height: 33px;
+  }
+
+  .centerMainHeader .centerMainMenu li {
+    box-sizing: border-box;
+    float: left;
+    font-size: 0.85em;
+  }
+
+  .centerMainHeader .centerMainMenu .centerMenuItem {
+    padding: 9px 12px;
+  }
+
+  .mainPageBody .leadingSection .newsContainer {
+    width: 29.93%;
+    height: 210px;
+    margin: 1.7%;
+  }
+
+  .mainPageBody .leadingSection .newsContainer.first {
+    margin-left: 1.7%;
+  }
+
+  .mainPageBody .leadingSection .newsContainer.fourth {
+    margin-right: 1.7%;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .mainPageBody .leadingSection .sectionHeader {
+    font-size: 0.925em;
+  }
+
+  .mainPageBody .leadingSection.vh {
+    margin-top: 20px;
+  }
+
+  .mainPageBody .leadingSection .eventsContainer.first {
+    margin-left: 0;
+  }
+
+  .mainPageBody .leadingSection .eventsContainer {
+    width: 80%;
+    height: 105px;
+    margin: 10px 10% 10px 10% !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+  }
+
+  .eventBoxes {
+    height: 100%;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mainPageBody .leadingSection .newsContainer {
+    width: 44%;
+    height: 210px;
+    margin: 10px 3% 10px 3%;
+  }
+
+  .mainPageBody .leadingSection .newsContainer.first {
+    margin-left: 3%;
+  }
+
+  .mainPageBody .leadingSection .newsContainer.fourth {
+    margin-right: 3%;
+  }
+
+  .mainPageBody .leadingSection .vhContainer {
+    width: 86%;
+    height: 270px;
+    margin: 10px 7% 10px 7%;
+  }
+
+  .mainPageBody .leadingSection .vhContainer.first {
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+}
+@media only screen and (max-width: 680px) {
+  main {
+    font-size: 0.9em;
+  }
+
+  .topMainHeader .topMainMenu {
+    padding-top: 0;
+    float: right;
+    line-height: 80px;
+  }
+  .topMainHeader .topMainMenu .smallerSearch {
+    margin-right: 5px;
+  }
+  .topMainHeader .topMainMenu a {
+    font-size: 0.9em;
+    padding: 6px;
+    margin-left: 2px;
+  }
+  .topMainHeader h1 {
+    display: none;
+  }
+
+  .centerMainHeader {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: block;
+  }
+}
+@media only screen and (max-width: 480px) {
+  main {
+    font-size: 0.875em;
+  }
+
+  .mainPageBody .leadingSection .eventsContainer {
+    width: 92%;
+    margin: 10px 4% 10px 4% !important;
+  }
+
+  .mainPageBody .leadingSection .newsContainer {
+    width: 92%;
+    height: 210px;
+    margin: 10px 4% 10px 4%;
+  }
+
+  .mainPageBody .leadingSection .newsContainer.first {
+    margin-left: 4%;
+  }
+
+  .mainPageBody .leadingSection .newsContainer.fourth {
+    margin-right: 4%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .mainHeader .topMainMenu {
+    font-size: 0.9em;
+  }
+
+  .mainPageBody .leadingSection.events {
+    font-size: 0.925em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

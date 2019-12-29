@@ -1,0 +1,299 @@
+@import "variables";
+
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+#site{
+  background: white;
+}
+.clearfix{
+  clear:both;
+}
+
+/*----------Main Header----------*/
+.mainHeader{
+  box-sizing: border-box;
+}
+.mainHeader ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mainHeader a{
+  color: white;
+}
+
+.contentHolder{
+  width: 77.10%;
+  margin: 0 auto;
+}
+
+/*----------Top Main Header----------*/
+.topMainHeader{
+  background: $primary-color;
+  height: 92px;
+}
+.topMainHeader h1{
+  font-size: 2em;
+  display: block;
+  float: left;
+  margin: 0;
+  line-height: 92px;
+  color: white;
+}
+.searchBoxContainer{
+  display: inline-block;
+  height: 34px;
+  width: 300px;
+  background: white;
+  border: 2px solid white;
+  border-radius: 17px;
+  margin-left: 1.95%;
+  margin-top: 2.60%;
+}
+.searchBox{
+  line-height: 34px;
+  width: 250px;
+  display: block;
+  float: left;
+  border: 0;
+  background: none;
+  margin-left: 8px;
+}
+.searchBoxContainer .fas{
+  display: block;
+  float: right;
+  color: gray;
+  font-size: 1.625em;
+  padding: 4px 8px;
+  background: white;
+  background: none;
+}
+.topMainHeader .topMainMenu{
+  padding-top: 33px;
+  float: right;
+}
+.topMainHeader .topMainMenu ul:after{
+  display: block;
+  content: '';
+  clear: both;
+}
+.topMainHeader .topMainMenu li{
+  float: left;
+  display: block;
+}
+.topMainHeader .topMainMenu a{
+  font-size: 1.125em;
+  padding: 10px;
+  margin-left: 9px;
+}
+.topMainHeader .topMainMenu li a:hover{
+  background: $headerSecondary-color;
+  border-radius: 3px;
+}
+.topMainHeader .topMainMenu .smallerSearch{
+  margin-right: 25px;
+  display: none;
+}
+
+/*----------Center Main Header----------*/
+.centerMainHeader{
+  background: $headerSecondary-color;
+}
+.centerMainHeader .fas{
+  margin-right: 5px;
+}
+.centerMainHeader .centerMainMenu{
+  line-height: 39px;
+}
+.centerMainHeader .centerMainMenu li{
+  box-sizing: border-box;
+  float: left;
+  font-size: 1.000em;
+}
+.centerMainHeader .centerMainMenu ul:after{
+  display: block;
+  content: '';
+  clear: both;
+}
+.centerMainHeader .centerMainMenu .centerMenuItem{
+  padding: 10px 20px;
+}
+.centerMainHeader .centerMainMenu .centerMenuItem.store{
+  color: #c3a04c;
+}
+.centerMainHeader .centerMainMenu .centerMenuItem:hover{
+  background: $headerSecondary-color_hover;
+}
+.centerMainHeader .centerMainMenu .centerMenuItem.selected{
+  color: $grayText-Color;
+  background: #e5eae6;
+}
+
+//---------Burger Menu---------
+.burgerMenu {
+  display: none;
+  background: #e5eae6;
+  .burgerIcon {
+    color: white;
+    background: $headerSecondary-color;
+    padding: 7px 14px;
+    float: right;
+    border-top: 1px solid white;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .burgerMenuList {
+    float: right;
+    padding-top: 15px;
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    z-index: 10;
+    visibility: hidden;
+    li {
+      display: block;
+      border-bottom: 1px solid white;
+      &:last-child {
+        border-bottom: 0;
+      }
+      .burgerMenuItem{
+        font-size: 0.825em;
+        display: block;
+        padding: 6px 13px;
+        background: $headerSecondary-color;
+        color: white;
+        border-radius: 5px;
+        .fas {
+          margin-right: 3px;
+        }
+      }
+      .burgerMenuItem.selected{
+        background: $headerSecondary-color_hover;
+      }
+
+    }
+  }
+  &:hover{
+    .burgerMenuList{
+      visibility: visible;
+    }
+  }
+}
+
+/*----------Body Container----------*/
+.bodyContainer{
+  background: #e5eae6;
+}
+.bodyContainer .bodyTopMarginHolder{
+  width: 100%;
+  height: 10px;
+  background: #e5eae6;
+  margin-bottom: 40px;
+}
+
+/*----------Main Page Body----------*/
+.bodyContainer main{
+  width: 80.29%;
+  display: block;
+  float: left;
+}
+.mainPageBody{
+  width: 100%;
+  height: 1840px;
+}
+.mainPageBody .leadingSection{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.mainPageBody .leadingSection.news{
+  height: 538px;
+}
+.mainPageBody .leadingSection.events{
+  height: 598px;
+}
+.mainPageBody .leadingSection.vh{
+  height: 658px;
+}
+.mainPageBody .leadingSection h3{
+  font-size: 1.625em;
+  color: $primary-color;
+  margin: 0 0 20px 10px;
+  border-left: 3px solid $primary-color;
+  padding-left: 10px;
+}
+.mainPageBody .leadingSection .visitAll{
+  float: right;
+  color: $primary-color;
+  font-weight: bold;
+  font-size: 1.250em;
+  margin: 6px 25px 0 0;
+}
+// .mainPageBody .leadingSection .visitAll:hover{
+//   margin-top: 4px;
+//   border-bottom: 2px solid $primary-color;
+//   transition: .13s;
+// }
+.mainPageBody .leadingSection .newsContainer,
+.mainPageBody .leadingSection .vhContainer,
+.mainPageBody .leadingSection .eventsContainer{
+  display: block;
+  float: left;
+  background: white;
+  }
+.mainPageBody .leadingSection .newsContainer{
+  width: 22.15%;
+  height: 210px;
+  margin: 10px 2.99% 20px 0;
+}
+.mainPageBody .leadingSection .newsContainer.first{
+  margin-left: 1.19%;
+}
+.mainPageBody .leadingSection .eventsContainer{
+  width: 44.91%;
+  height: 105px;
+  margin: 10px 1.79% 20px 1.19%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+.mainPageBody .leadingSection .eventsContainer.first{
+  margin-left: 3.59%;
+}
+.mainPageBody .leadingSection .vhContainer{
+  width: 46.70%;
+  height: 270px;
+  margin: 10px 0 20px 0;
+}
+.mainPageBody .leadingSection .vhContainer.first{
+  margin-left: 1.79%;
+  margin-right: 2.99%;
+}
+.mainPageBody .leadingSection .newsContainer.fourth{
+  margin-right: 0;
+}
+
+//-----Aside bar-----
+@import "asideBar";
+
+//-----News Sections-----
+@import "newsSection";
+
+
+//-----Events Section-----
+@import "eventsSection";
+
+
+//-----Videos and Highlights Section-----
+@import "vhSection";
+
+
+//-----Responsive, break points-----
+@import "mediaqueryes";
+

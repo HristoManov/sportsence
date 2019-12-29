@@ -1,0 +1,204 @@
+//Responsive Breakpoints:
+
+@media only screen and (max-width: 1300px) {
+  .contentHolder{
+    width: 81.10%;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .contentHolder{
+    width: 85.10%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .contentHolder{
+    width: 89.10%;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .contentHolder{
+    width: 93.10%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .contentHolder{
+    width: 97.10%;
+  }
+}
+@media only screen and (max-width: 1040px) {
+  .contentHolder{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .topMainHeader {
+    h1{
+      font-size: 1.75em;
+      margin-left: 5px;
+    }
+    .searchBoxContainer{
+      display: none;
+    }
+    .topMainMenu{
+      .smallerSearch{
+        display: block;
+      }
+      a{
+        font-size: 1em;
+      }
+    }
+  }
+  .mainAsideBar{
+    display: none;
+  }
+  .bodyContainer main{
+    width: 90%;
+    float: none;
+    margin: 0 auto;
+  }
+
+}
+@media only screen and (max-width: 900px) {
+  .bodyContainer main{
+    width: 100%;
+  }
+  .topMainHeader{
+    height: 80px;
+    h1{
+      line-height: 80px;
+    }
+  }
+
+  .centerMainHeader .centerMainMenu{
+    line-height: 33px;
+  }
+  .centerMainHeader .centerMainMenu li{
+    box-sizing: border-box;
+    float: left;
+    font-size: 0.850em;
+  }
+  .centerMainHeader .centerMainMenu .centerMenuItem{
+    padding: 9px 12px;
+  }
+  .mainPageBody .leadingSection .newsContainer{
+    width: 29.93%;
+    height: 210px;
+    margin: 1.70%;
+  }
+  .mainPageBody .leadingSection .newsContainer.first{
+    margin-left: 1.70%;
+  }
+  .mainPageBody .leadingSection .newsContainer.fourth{
+    margin-right: 1.70%;
+  }
+
+}
+@media only screen and (max-width: 820px) {
+  .mainPageBody .leadingSection .sectionHeader{
+    font-size: 0.925em;
+  }
+  .mainPageBody .leadingSection.vh{
+    margin-top: 20px;
+  }
+  .mainPageBody .leadingSection .eventsContainer.first{
+    margin-left: 0;
+  }
+  .mainPageBody .leadingSection .eventsContainer{
+    width: 80%;
+    height: 105px;
+    margin: 10px 10% 10px 10% !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+  }
+  .eventBoxes{
+    height: 100%;
+    margin-bottom: 15px;
+  }
+
+}
+@media only screen and (max-width: 768px) {
+  .mainPageBody .leadingSection .newsContainer{
+    width: 44%;
+    height: 210px;
+    margin: 10px 3% 10px 3%;
+  }
+  .mainPageBody .leadingSection .newsContainer.first{
+    margin-left: 3%;
+  }
+  .mainPageBody .leadingSection .newsContainer.fourth{
+    margin-right: 3%;
+  }
+
+  .mainPageBody .leadingSection .vhContainer{
+    width: 86%;
+    height: 270px;
+    margin: 10px 7% 10px 7%;
+  }
+  .mainPageBody .leadingSection .vhContainer.first{
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+}
+@media only screen and (max-width: 680px) {
+  main{
+    font-size: 0.900em;
+  }
+  .topMainHeader{
+
+    .topMainMenu{
+      padding-top: 0;
+      float: right;
+      line-height: 80px;
+      .smallerSearch{
+        margin-right: 5px;
+      }
+      a{
+        font-size: 0.900em;
+        padding: 6px;
+        margin-left: 2px;
+      }
+    }
+    h1{
+      display: none;
+    }
+
+  }
+  .centerMainHeader{
+    display: none;
+  }
+  .burgerMenu{
+    display: block;
+  }
+}
+@media only screen and (max-width: 480px) {
+  main{
+    font-size: 0.875em;
+  }
+
+  .mainPageBody .leadingSection .eventsContainer{
+    width: 92%;
+    margin: 10px 4% 10px 4% !important;
+  }
+
+  .mainPageBody .leadingSection .newsContainer{
+    width: 92%;
+    height: 210px;
+    margin: 10px 4% 10px 4%;
+  }
+  .mainPageBody .leadingSection .newsContainer.first{
+    margin-left: 4%;
+  }
+  .mainPageBody .leadingSection .newsContainer.fourth{
+    margin-right: 4%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .mainHeader .topMainMenu{
+    font-size: 0.900em;
+  }
+
+  .mainPageBody .leadingSection.events{
+    font-size: 0.925em;
+  }
+}
